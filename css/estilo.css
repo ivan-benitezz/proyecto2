@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*elemento de grid layout*/
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 1.1fr 1.7fr 0.9fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "video1 video1 video2"
+      "video1 video1 video2"
+      "audio audio audio"
+      "footer footer footer";
+  }
+  
+  .header {
+     grid-area: header;
+     background-color: rgb(86, 218, 252);
+    
+    }
+  
+  .video2 {
+     grid-area: video2;
+     background-color: rgb(33, 174, 221);
+    
+    }
+  
+  .audio {
+     grid-area: audio;
+     background-color: rgb(23, 136, 173); 
+    
+    }
+  
+  .footer {
+     grid-area: footer; 
+     background-color: rgb(77, 93, 235);
+    
+    }
+  
+  .video1 {
+     grid-area: video1; 
+     background-color: lightblue;
+    
+    }
+
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(255, 0, 0);
+        
+    }
+    .videoyoutube{
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+    
+    }
+    h2{
+        margin: 15px;
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+
+      
+
+        
+    }
+    p{
+        margin: 10px;
+        text-align: center;
+       
+    }
+    .video30{
+        width: 500px;
+        height: 300px;
+        margin: 40px;
+    }
+    .cancionmet{
+        margin: 15px;
+        width: 1000px;
+    }
+    .formulario{
+        width: 400px;
+        margin: 20px;
+        border: blue solid 2px;
+        padding: 20px;
+    }
+    section{
+        text-align: center;
+    }
+  .formufondo{
+    background-color: rgba(47, 179, 184, 0.925);
+  }
+  .table{
+    margin:20px;
+    width: 1000px;
+  }
+  .cont{
+    text-align: left;
+    margin: 20px;
+  }
+  .fotoperfil{
+    width: 100px;
+  }
+  .contenedor2 { 
+    margin: 20px;
+     display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+    grid-template-rows: 0.5fr 2.1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header2 header2 header2"
+      "pregfrec pregfrec imagen"
+      "footer2 footer2 footer2";
+  }
+  
+  
+  .pregfrec { 
+    grid-area: pregfrec; 
+}
+  
+  .imagen {
+     grid-area: imagen;
+    }
+  
+  .footer2 {
+     grid-area: footer2; 
+    }
+    .fotofam{
+        width: 500px;
+    }
+  
